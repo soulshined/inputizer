@@ -1,0 +1,21 @@
+doctype "html"
+html (lang=en)
+{
+    head
+    {
+        title "Inputizer Example"
+        script(src=example.js type=module defer=true)
+
+        css {
+            html, body {
+                width: 100%; height: 100%;
+                padding : 0; margin: 0;
+            }
+        }
+    }
+
+    body (style="display: flex")
+    {
+         textarea (#myTextArea spellcheck=false style="flex:1" autofocus autocomplete=false placeholder="Explore here! Open the developer console to see configurations")
+    }
+}
